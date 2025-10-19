@@ -4,7 +4,7 @@ const { protect } = require('../../../middleware/authMiddleware');
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 
 // Initialize Google Gemini AI
-const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY || 'AIzaSyDxLDuLA9paxomWOgz0dXwW0Il9-BnUopo');
+const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY);
 
 // @desc    Generate a SWOT analysis for the user
 // @route   GET /api/dashboard/swot
